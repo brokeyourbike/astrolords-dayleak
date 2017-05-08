@@ -40,7 +40,6 @@ def core(app):
 
 	mouse.move(coords=cords)
 
-	# get_box = (928, 608, 933, 610)
 	get_box = (906, 641, 910, 644)
 	# color_1 = [x for x in range(4, 5)]
 	# color_2 = [x for x in range(150, 180)]
@@ -49,29 +48,21 @@ def core(app):
 	for i in range(10):
 		tmp = []
 		image = ImageGrab.grab(get_box)
-		color = image.getpixel((3, 1))
-		tmp.append(color[0])
+		pre_color = image.getpixel((3, 1))
+		tmp.append(pre_color[0])
 		if len(tmp) > 2:
-			if color[0] == tmp[-1]:
+			if pre_color[0] == tmp[-1]:
 				break
 
-	print('RGB =', color[0], color[1], color[2])
-
-	# color = (4, 160, 35)
-	# # time.clock()
-	# if color[0] == 4:
-	# 	if color[1] in color_2:
-	# 		if color_3[2] in color_3:
-	# 			click(1, 1)
-	# # print(round(time.clock() * 1000, 1), 'ms')
+	print('TARGET RGB =', pre_color[0], pre_color[1], pre_color[2])
 
 	while True:
 		image = ImageGrab.grab(get_box)
 		color = image.getpixel((3, 1))
 
-		if color[0] != 1:
-			if color[1] != 24:
-				if color[2] != 64:
+		if color[0] != pre_color[0]:
+			if color[1] != pre_color[1]:
+				if color[2] != pre_color[2]:
 					click(cords[0], cords[1])
 					print('NOT RGB =', color[0], color[1], color[2])
 					return True

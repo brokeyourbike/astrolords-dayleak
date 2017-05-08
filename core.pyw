@@ -65,17 +65,17 @@ class Main_Window(QtGui.QWidget):
 
 	def run_algo(self):
 		if not astro.run():
-					self.button_open.setEnabled(True)
-					self.button_open.setText('Подключить игру')
-					self.button_go.setEnabled(False)
-					self.button_go.setText('Ожидаю ..')
+			self.button_open.setEnabled(True)
+			self.button_open.setText('Подключить игру')
+			self.button_go.setEnabled(False)
+			self.button_go.setText('Ожидаю ..')
 		else:
 			fl = astro.core(astro.run())
 
 
 if __name__ == "__main__":
 	app = QtGui.QApplication(sys.argv)
-	app.setQuitOnLastWindowClosed(True)  # Запрещаем автоматический выход при закрытии последнего окна
+	# app.setQuitOnLastWindowClosed(False)  # Запрещаем автоматический выход при закрытии последнего окна
 	window = Main_Window()
 	window.show()
 	sys.exit(app.exec_())
