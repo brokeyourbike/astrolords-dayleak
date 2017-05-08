@@ -10,4 +10,4 @@ Compares pixels and clicks on a specific area when they do not match (`~1 ms`).
 
 
 [1]: http://astrolords.ru/
-[logo]: https://github.com/brokeyourbike/astrolords_dayleak/screen_example/screen_example_1.png "Screen Example"
+[logo]: https://github.com/brokeyourbike/astrolords_dayleak/blob/master/screen_example/screen_example_1.png "Screen Example"
