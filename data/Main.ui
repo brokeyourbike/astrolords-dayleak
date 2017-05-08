@@ -23,7 +23,7 @@
    <string>Astro Lords - BrokeYourBike</string>
   </property>
   <property name="windowOpacity">
-   <double>0.900000000000000</double>
+   <double>1.000000000000000</double>
   </property>
   <widget class="QPushButton" name="button_open">
    <property name="geometry">
