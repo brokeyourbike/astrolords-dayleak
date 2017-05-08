@@ -20,7 +20,7 @@ executables = [
 ]
 
 setup(
-	name="Astro Lords - BrokeYourBike",
+	name="Astro Lords - DayLeak",
 	version="1.0",
 	description="Developed by Ivan Stasiuk",
 	options=dict(build_exe=buildOptions),
