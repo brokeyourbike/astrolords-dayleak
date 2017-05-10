@@ -20,7 +20,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Astro Lords - BrokeYourBike</string>
+   <string>Astro Lords - DayLeak</string>
   </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
@@ -159,14 +159,14 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>330</x>
      <y>160</y>
      <width>111</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Коефициент:</string>
+    <string>Коэффициент:</string>
    </property>
   </widget>
  </widget>
