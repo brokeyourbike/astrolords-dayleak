@@ -1,4 +1,6 @@
 # Astro Lords - DayLeak
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/timgrossmann/InstaPy/blob/master/LICENSE)
+[![built with Python3](https://img.shields.io/badge/Built%20with-Python3-green.svg)](https://www.python.org/)
 Some automation for [Astrolords Game][1].
 
 ![alt text][logo]
